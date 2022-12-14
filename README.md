@@ -24,6 +24,8 @@ Multiple facets (see Lecture 10) e.g. small multiples, or a dashboard of differe
 Dynamic/animated view (animation may be linear and passive i.e. without any input from user), OR
 Interactive manipulation of the view (some form of real-time changes can be made by the user to what is show on screen)
 
-I have deployed my visualisation and is viewable at the following link:
+# Deployment
+
+I used Netifly to deploy my visualisation and it is viewable at the following link:
 
 https://lovely-capybara-c38eaf.netlify.app/
