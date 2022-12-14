@@ -51,17 +51,17 @@ function ScatterChart() {
             pointRadius: 5,
           },
           {
-            label: "Pakistan Players",
+            label: "Pakistani Players",
             data: PakistanPlayers,
             pointRadius: 5,
           },
           {
-            label: "South Africa Players",
+            label: "South African Players",
             data: SAPlayers,
             pointRadius: 5,
           },
           {
-            label: "West Indies Players",
+            label: "West Indian Players",
             data: WIPlayers,
             pointRadius: 5,
           },
@@ -97,19 +97,19 @@ function ScatterChart() {
             ),
           },
           {
-            label: "Pakistan Players",
+            label: "Pakistani Players",
             data: PakistanPlayers,
             pointRadius: PakistanPlayers.map(
               (data) => (data.Ave / 180) * data.Ave
             ),
           },
           {
-            label: "South Africa Players",
+            label: "South African Players",
             data: SAPlayers,
             pointRadius: SAPlayers.map((data) => (data.Ave / 180) * data.Ave),
           },
           {
-            label: "West Indies Players",
+            label: "West Indian Players",
             data: WIPlayers,
             pointRadius: WIPlayers.map((data) => (data.Ave / 180) * data.Ave),
           },
@@ -265,17 +265,17 @@ function ScatterChart() {
         pointRadius: 5,
       },
       {
-        label: "Pakistan Players",
+        label: "Pakistani Players",
         data: PakistanPlayers,
         pointRadius: 5,
       },
       {
-        label: "South Africa Players",
+        label: "South African Players",
         data: SAPlayers,
         pointRadius: 5,
       },
       {
-        label: "West Indies Players",
+        label: "West Indian Players",
         data: WIPlayers,
         pointRadius: 5,
       },
