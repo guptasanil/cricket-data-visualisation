@@ -180,11 +180,12 @@ function ScatterChart() {
           },
         ],
       });
+      console.log(player);
       setpieUserData({
         labels: [50, 100],
         datasets: [
           {
-            label: player.Player + " Last 10 Innings",
+            label: player.Player,
             data: [player.fifties, player.hundreds],
             backgroundColor: [player.colour, "rgba(255,98,132,255)"],
           },
@@ -351,13 +352,13 @@ function ScatterChart() {
                 display: true,
                 text: "Form in last 10 Innings",
               },
-              // tooltip: {
-              //   callbacks: {
-              //     afterTitle: function (context) {
-              //       // return "Runs scored: " + context[0].raw;
-              //     },
-              //   },
-              // },
+              tooltip: {
+                callbacks: {
+                  label: (context) => {
+                    return `Date of Innings: ${context.label} \n Runs Scored: ${context.raw}`;
+                  },
+                },
+              },
             },
             // scales: {
             //   x: {
@@ -387,6 +388,18 @@ function ScatterChart() {
               title: {
                 display: true,
                 text: "Conversion Rate",
+              },
+              tooltip: {
+                callbacks: {
+                  title: (context) => {
+                    return `${context[0].dataset.label}`;
+                    // console.log(context[0].dataset);
+                  },
+                  label: (hello) => {
+                    console.log(hello);
+                    return `Number of ${hello.label}s: ${hello.raw}`;
+                  },
+                },
               },
             },
           }}
