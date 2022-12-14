@@ -3,6 +3,14 @@ import { Scatter, Bar, Pie, Doughnut } from "react-chartjs-2";
 import { useRef } from "react";
 import { getElementAtEvent } from "react-chartjs-2";
 import { TopScoreData } from "../topScoreData";
+import {
+  IndiaColour,
+  OtherColour,
+  PakistanColour,
+  WIColour,
+  SAColour,
+  AustralianColour,
+} from "../variables";
 
 import { useState } from "react";
 import {
@@ -210,13 +218,13 @@ function ScatterChart() {
             data: TopScoreData.map((data) => data.HS),
             backgroundColor: [
               player.colour,
-              "rgba(160, 208, 246, 255)",
-              "rgba(160, 208, 246, 255)",
-              "rgba(160, 208, 246, 255)",
-              "rgba(160, 208, 246, 255)",
-              "rgba(160, 208, 246, 255)",
-              "rgba(160, 208, 246, 255)",
-              "rgba(160, 208, 246, 255)",
+              IndiaColour,
+              OtherColour,
+              IndiaColour,
+              WIColour,
+              IndiaColour,
+              PakistanColour,
+              WIColour,
             ],
             borderColor: "rgba(255,166,80,255)",
           },
