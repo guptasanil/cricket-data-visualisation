@@ -354,6 +354,10 @@ function ScatterChart() {
               },
               tooltip: {
                 callbacks: {
+                  title: (context) => {
+                    return `${context[0].dataset.label}`;
+                    // console.log(context)
+                  },
                   label: (context) => {
                     return `Date of Innings: ${context.label} \n Runs Scored: ${context.raw}`;
                   },
@@ -395,9 +399,9 @@ function ScatterChart() {
                     return `${context[0].dataset.label}`;
                     // console.log(context[0].dataset);
                   },
-                  label: (hello) => {
-                    console.log(hello);
-                    return `Number of ${hello.label}s: ${hello.raw}`;
+                  label: (context) => {
+                    // console.log(context);
+                    return `Number of ${context.label}s: ${context.raw}`;
                   },
                 },
               },
